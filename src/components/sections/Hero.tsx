@@ -5,7 +5,7 @@ export function Hero() {
     <Card>
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 sm:gap-8">
         {/* Avatar - shows first on mobile */}
-        <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-lg overflow-hidden bg-[#e8614d] flex-shrink-0 order-first md:order-last mx-auto md:mx-0">
+        <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-lg overflow-hidden bg-[#3b9c5c] flex-shrink-0 order-first md:order-last mx-auto md:mx-0">
           <img
             src="/profile.jpg"
             alt="Shamal Weerasooriya"
@@ -23,7 +23,7 @@ export function Hero() {
             <p>💻 Software Engineer at Pagero</p>
             <p>🎓 Computer Engineering @ University of Peradeniya</p>
             <p>
-              🧬 Research interests: Computational Biolog, Computer Security
+              🧬 Research interests: Computational Biology, Computer Security
             </p>
             <p>🌿 UI development enthusiast</p>
           </div>
