@@ -3,10 +3,6 @@ import { Card } from "../ui/Card";
 export function Contact() {
   return (
     <section className="space-y-6">
-      <h2 className="text-lg font-semibold text-stone-900 dark:text-stone-100">
-        Get in touch
-      </h2>
-
       <Card>
         <div className="space-y-4">
           <p className="text-stone-600 dark:text-stone-400 text-sm">
