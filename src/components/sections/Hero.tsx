@@ -5,7 +5,7 @@ export function Hero() {
     <Card>
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 sm:gap-8">
         {/* Avatar - shows first on mobile */}
-        <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-lg overflow-hidden bg-[#3b9c5c] flex-shrink-0 order-first md:order-last mx-auto md:mx-0 shadow-lg shadow-black/30 transition-transform duration-300 hover:rotate-3 hover:scale-105">
+        <div className="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 rounded-lg overflow-hidden bg-[#3b9c5c] flex-shrink-0 order-first md:order-last mx-auto md:mx-0 shadow-lg shadow-black/30 transition-transform duration-300 hover:rotate-3 hover:scale-105">
           <img
             src="/profile.jpg"
             alt="Shamal Weerasooriya"
