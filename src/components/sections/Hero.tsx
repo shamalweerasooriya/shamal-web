@@ -19,7 +19,7 @@ export function Hero() {
             Hi, I'm <span className="font-bold">Shamal.</span>
           </h1>
 
-          <div className="space-y-1 text-stone-300 text-sm sm:text-base">
+          <div className="space-y-1 text-stone-600 dark:text-stone-300 text-sm sm:text-base">
             <p>💻 Software Engineer at Pagero</p>
             <p>🎓 Computer Engineering @ University of Peradeniya</p>
             <p>
@@ -28,7 +28,7 @@ export function Hero() {
             <p>🌿 UI development enthusiast</p>
           </div>
 
-          <div className="space-y-1 text-stone-300 text-sm sm:text-base">
+          <div className="space-y-1 text-stone-600 dark:text-stone-300 text-sm sm:text-base">
             <p>
               🏉 Rugby | ⚽ Football | 🏎️ F1 | 📚 Reader | 🎬 Movies & TV shows
             </p>

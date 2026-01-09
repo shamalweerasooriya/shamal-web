@@ -31,18 +31,22 @@ const currentGames = [
 export function CurrentlyUpTo() {
   return (
     <section className="space-y-6">
-      <h2 className="text-lg font-semibold text-stone-100">What I'm up to</h2>
+      <h2 className="text-lg font-semibold text-stone-900 dark:text-stone-100">
+        What I'm up to
+      </h2>
 
       {/* Current Project */}
       <Card>
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <span className="text-lg">🚀</span>
-            <h3 className="font-medium text-stone-100">Currently building</h3>
+            <h3 className="font-medium text-stone-900 dark:text-stone-100">
+              Currently building
+            </h3>
           </div>
           <div className="space-y-2">
             <h4 className="text-[#e8614d] font-semibold">BookNest</h4>
-            <p className="text-stone-400 text-sm leading-relaxed">
+            <p className="text-stone-600 dark:text-stone-400 text-sm leading-relaxed">
               A cozy, modern reading companion designed to help you organize,
               track, and rediscover your love for books. From managing your
               personal library and tracking reading progress to exploring
@@ -52,7 +56,7 @@ export function CurrentlyUpTo() {
           </div>
           <Link
             to="/projects"
-            className="inline-flex items-center gap-1 text-sm text-stone-400 hover:text-[#e8614d] transition-colors"
+            className="inline-flex items-center gap-1 text-sm text-stone-600 dark:text-stone-400 hover:text-[#e8614d] transition-colors"
           >
             See all projects
             <span>→</span>
@@ -65,19 +69,21 @@ export function CurrentlyUpTo() {
         <div className="space-y-4">
           <div className="flex items-center gap-2">
             <span className="text-lg">📖</span>
-            <h3 className="font-medium text-stone-100">Currently reading</h3>
+            <h3 className="font-medium text-stone-900 dark:text-stone-100">
+              Currently reading
+            </h3>
           </div>
           <div className="flex gap-4 overflow-x-auto pb-2">
             {currentBooks.map((book, index) => (
               <div key={index} className="flex-shrink-0 group cursor-pointer">
-                <div className="w-24 h-36 sm:w-28 sm:h-40 rounded-lg overflow-hidden bg-stone-700 shadow-md group-hover:shadow-lg transition-shadow">
+                <div className="w-24 h-36 sm:w-28 sm:h-40 rounded-lg overflow-hidden bg-stone-200 dark:bg-stone-700 shadow-md group-hover:shadow-lg transition-shadow">
                   <img
                     src={book.cover}
                     alt={book.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <p className="mt-2 text-xs text-stone-400 text-center max-w-24 sm:max-w-28 truncate">
+                <p className="mt-2 text-xs text-stone-600 dark:text-stone-400 text-center max-w-24 sm:max-w-28 truncate">
                   {book.title}
                 </p>
               </div>
@@ -91,19 +97,21 @@ export function CurrentlyUpTo() {
         <div className="space-y-4">
           <div className="flex items-center gap-2">
             <span className="text-lg">🎮</span>
-            <h3 className="font-medium text-stone-100">Currently playing</h3>
+            <h3 className="font-medium text-stone-900 dark:text-stone-100">
+              Currently playing
+            </h3>
           </div>
           <div className="flex gap-4 overflow-x-auto pb-2">
             {currentGames.map((game, index) => (
               <div key={index} className="flex-shrink-0 group cursor-pointer">
-                <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-lg overflow-hidden bg-stone-700 shadow-md group-hover:shadow-lg transition-shadow">
+                <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-lg overflow-hidden bg-stone-200 dark:bg-stone-700 shadow-md group-hover:shadow-lg transition-shadow">
                   <img
                     src={game.cover}
                     alt={game.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <p className="mt-2 text-xs text-stone-400 text-center max-w-28 sm:max-w-32 truncate">
+                <p className="mt-2 text-xs text-stone-600 dark:text-stone-400 text-center max-w-28 sm:max-w-32 truncate">
                   {game.title}
                 </p>
               </div>
