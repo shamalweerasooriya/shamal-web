@@ -1,8 +1,9 @@
 import { Link } from "react-router";
 import { Card } from "../components/ui/Card";
 
+// PDF in public/ is served as a static file so the link opens the file, not the SPA
 const PAPER_URL =
-  "https://shamalweerasooriya.org/Enhancing_End_to_end_Autonomous_Driving_with_Trajectory_Guided_Control_Prediction.pdf";
+  "/Enhancing_End_to_end_Autonomous_Driving_with_Trajectory_Guided_Control_Prediction.pdf";
 
 export function AutonomousDrivingProject() {
   return (
