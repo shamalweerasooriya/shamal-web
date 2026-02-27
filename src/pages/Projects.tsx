@@ -1,6 +1,22 @@
 import { Link } from "react-router";
 import { Card } from "../components/ui/Card";
 
+const projects = [
+  {
+    slug: "genome-assembly-parameters",
+    title: "Genome Assembly Parameter Optimization",
+    description:
+      "Systematic exploration of Hifiasm parameters for long-read sequencing: screening influential parameters, running structured experiments, and modeling effects to identify robust assembly configurations. Evaluated with QUAST and BUSCO.",
+    tags: [
+      "Computational biology",
+      "Long-read assembly",
+      "Hifiasm",
+      "QUAST",
+      "BUSCO",
+    ],
+  },
+];
+
 export function Projects() {
   return (
     <div className="space-y-8">
@@ -8,33 +24,46 @@ export function Projects() {
         Projects
       </h1>
 
-      <Card className="text-center py-12">
-        <div className="space-y-6">
-          {/* Fun T-Rex illustration */}
-          <img
-            src="https://raw.githubusercontent.com/nicehorse06/nicehorse06.github.io/master/src/image/t-rex.gif"
-            alt="T-Rex"
-            className="w-48 h-48 mx-auto object-contain"
-          />
+      <p className="text-stone-600 dark:text-stone-400">
+        Research and projects I'm working on.
+      </p>
 
-          <div className="space-y-2">
-            <h2 className="text-xl font-medium text-stone-900 dark:text-stone-100">
-              Rawr! Nothing here yet
-            </h2>
-            <p className="text-stone-600 dark:text-stone-400 max-w-md mx-auto">
-              This page is still evolving. Check back soon for a full list of
-              projects I've built and am currently working on.
-            </p>
-          </div>
-
+      <div className="space-y-6">
+        {projects.map((project) => (
           <Link
-            to="/"
-            className="inline-block text-sm text-[#e8614d] hover:underline"
+            key={project.slug}
+            to={`/projects/${project.slug}`}
+            className="block group"
           >
-            ← Back to home
+            <Card className="hover:shadow-lg dark:hover:shadow-black/40 transition-shadow">
+              <div className="space-y-3">
+                <h2 className="font-semibold text-stone-900 dark:text-stone-100 group-hover:text-[#e8614d] transition-colors">
+                  {project.title}
+                </h2>
+                <p className="text-stone-600 dark:text-stone-400 text-sm leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-2 py-0.5 rounded-full bg-stone-200 dark:bg-stone-700 text-stone-600 dark:text-stone-400"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <span className="inline-flex items-center gap-1 text-sm text-[#e8614d] font-medium">
+                  Read more
+                  <span className="group-hover:translate-x-0.5 transition-transform">
+                    →
+                  </span>
+                </span>
+              </div>
+            </Card>
           </Link>
-        </div>
-      </Card>
+        ))}
+      </div>
     </div>
   );
 }

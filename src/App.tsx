@@ -3,6 +3,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import { Navbar } from "./components/layout/Navbar";
 import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
+import { GenomeAssemblyProject } from "./pages/GenomeAssemblyProject";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route
+                  path="/projects/genome-assembly-parameters"
+                  element={<GenomeAssemblyProject />}
+                />
               </Routes>
             </div>
           </main>

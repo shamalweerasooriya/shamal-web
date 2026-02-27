@@ -39,19 +39,23 @@ export function CurrentlyUpTo() {
       <Card>
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <span className="text-lg">🚀</span>
+            <span className="text-lg">🧬</span>
             <h3 className="font-medium text-stone-900 dark:text-stone-100">
-              Currently building
+              Current research
             </h3>
           </div>
           <div className="space-y-2">
-            <h4 className="text-[#e8614d] font-semibold">BookNest</h4>
+            <Link
+              to="/projects/genome-assembly-parameters"
+              className="text-[#e8614d] font-semibold hover:underline"
+            >
+              Genome Assembly Parameter Optimization
+            </Link>
             <p className="text-stone-600 dark:text-stone-400 text-sm leading-relaxed">
-              A cozy, modern reading companion designed to help you organize,
-              track, and rediscover your love for books. From managing your
-              personal library and tracking reading progress to exploring
-              insights about your reading habits, BookNest creates a calm,
-              distraction-free space where every book finds its place.
+              Systematically exploring Hifiasm parameters for long-read
+              sequencing: screening influential parameters, running structured
+              experiments, and modeling effects to identify robust assembly
+              configurations. Evaluated with QUAST and BUSCO.
             </p>
           </div>
           <Link
