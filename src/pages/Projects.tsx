@@ -64,6 +64,45 @@ export function Projects() {
           </Link>
         ))}
       </div>
+
+      <section className="space-y-4 pt-4 border-t border-stone-200 dark:border-stone-800">
+        <h2 className="text-lg font-semibold text-stone-900 dark:text-stone-100">
+          Past research
+        </h2>
+        <Link to="/projects/autonomous-driving-tcp" className="block group">
+          <Card className="hover:shadow-lg dark:hover:shadow-black/40 transition-shadow">
+            <div className="space-y-3">
+              <h3 className="font-semibold text-stone-900 dark:text-stone-100 group-hover:text-[#e8614d] transition-colors">
+                Enhancing end-to-end autonomous driving with trajectory-guided
+                control prediction
+              </h3>
+              <p className="text-stone-600 dark:text-stone-400 text-sm leading-relaxed">
+                Undergraduate work on the TCP framework: depth features
+                (MonoDepth2) for trajectory prediction and MPC for control.
+                Implemented and evaluated in CARLA. Supervised by Prof. Roshan
+                Ragel and Eng. Geesara Kulathunga.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-0.5 rounded-full bg-stone-200 dark:bg-stone-700 text-stone-600 dark:text-stone-400">
+                  Autonomous driving
+                </span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-stone-200 dark:bg-stone-700 text-stone-600 dark:text-stone-400">
+                  TCP
+                </span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-stone-200 dark:bg-stone-700 text-stone-600 dark:text-stone-400">
+                  CARLA
+                </span>
+              </div>
+              <span className="inline-flex items-center gap-1 text-sm text-[#e8614d] font-medium">
+                Read more
+                <span className="group-hover:translate-x-0.5 transition-transform">
+                  →
+                </span>
+              </span>
+            </div>
+          </Card>
+        </Link>
+      </section>
     </div>
   );
 }
