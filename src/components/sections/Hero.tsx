@@ -6,7 +6,7 @@ export function Hero() {
       {/* Mobile: Full-width image above card */}
       <div className="md:hidden w-full aspect-square rounded-xl overflow-hidden shadow-lg shadow-black/30">
         <img
-          src="/profile.jpg"
+          src="/profile2.jpg"
           alt="Shamal Weerasooriya"
           className="w-full h-full object-cover object-top"
         />
@@ -17,7 +17,7 @@ export function Hero() {
           {/* Desktop: Avatar inside card */}
           <div className="hidden md:block w-60 h-60 rounded-lg overflow-hidden bg-[#3b9c5c] flex-shrink-0 order-last shadow-lg shadow-black/30 transition-transform duration-300 hover:rotate-3 hover:scale-105">
             <img
-              src="/profile.jpg"
+              src="/profile2.jpg"
               alt="Shamal Weerasooriya"
               className="w-full h-full object-cover object-top"
             />
