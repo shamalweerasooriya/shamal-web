@@ -3,8 +3,8 @@ import { ThemeToggle } from "../ui/ThemeToggle";
 
 export function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-4 sm:px-6 md:px-12 py-4 border-b border-stone-200 dark:border-stone-800">
-      <Link to="/" className="font-semibold text-base sm:text-lg">
+    <nav className="flex items-center justify-between px-4 sm:px-6 md:px-12 py-4 border-b border-(--border)">
+      <Link to="/" className="font-semibold text-base sm:text-lg text-(--text)">
         <span className="hidden sm:inline">Shamal Weerasooriya</span>
         <span className="sm:hidden">Shamal W.</span>
       </Link>
@@ -15,7 +15,7 @@ export function Navbar() {
           href="https://github.com/shamalweerasooriya"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs sm:text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors"
+          className="text-xs sm:text-sm text-(--text-muted) hover:text-(--link) transition-colors"
         >
           GitHub
         </a>
@@ -29,7 +29,7 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
   return (
     <Link
       to={to}
-      className="text-xs sm:text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors"
+      className="text-xs sm:text-sm text-(--text-muted) hover:text-(--link) transition-colors"
     >
       {children}
     </Link>

@@ -3,13 +3,11 @@ import { Card } from "../ui/Card";
 export function Contact() {
   return (
     <section className="space-y-6">
-      <h2 className="text-lg font-semibold text-stone-900 dark:text-stone-100">
-        Get in touch
-      </h2>
+      <h2 className="text-lg font-semibold text-(--text)">Get in touch</h2>
 
       <Card>
         <div className="space-y-4">
-          <p className="text-stone-600 dark:text-stone-400 text-sm">
+          <p className="text-(--text-muted) text-sm">
             Feel free to reach out if you want to collaborate, chat about tech,
             or just say hi!
           </p>
@@ -17,7 +15,7 @@ export function Contact() {
           <div className="flex flex-wrap gap-4">
             <a
               href="mailto:weerasooriyashamal@gmail.com"
-              className="flex items-center gap-2 text-sm text-stone-700 dark:text-stone-300 hover:text-[#e8614d] transition-colors"
+              className="flex items-center gap-2 text-sm text-(--text) hover:text-(--link) transition-colors"
             >
               <span>📧</span>
               <span>weerasooriyashamal@gmail.com</span>
@@ -27,7 +25,7 @@ export function Contact() {
               href="https://github.com/shamalweerasooriya"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-stone-700 dark:text-stone-300 hover:text-[#e8614d] transition-colors"
+              className="flex items-center gap-2 text-sm text-(--text) hover:text-(--link) transition-colors"
             >
               <span>💻</span>
               <span>GitHub</span>
@@ -37,7 +35,7 @@ export function Contact() {
               href="https://linkedin.com/in/shamal-weerasooriya"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-stone-700 dark:text-stone-300 hover:text-[#e8614d] transition-colors"
+              className="flex items-center gap-2 text-sm text-(--text) hover:text-(--link) transition-colors"
             >
               <span>💼</span>
               <span>LinkedIn</span>

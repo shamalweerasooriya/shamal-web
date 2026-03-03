@@ -10,7 +10,7 @@ function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <div className="min-h-screen bg-stone-100 dark:bg-[#1a1a1a] text-stone-900 dark:text-stone-200 transition-colors">
+        <div className="min-h-screen bg-(--bg) text-(--text) transition-colors">
           <Navbar />
 
           <main className="px-4 sm:px-6 md:px-12 py-8 sm:py-12">
