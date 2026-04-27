@@ -9,7 +9,12 @@ export function Navbar() {
         <span className="sm:hidden">Shamal W.</span>
       </Link>
       <div className="flex items-center gap-4 sm:gap-6">
-        <NavLink to="/blog">Blog</NavLink>
+        <a
+          href="https://blog.shamalweerasooriya.org/"
+          className="text-xs sm:text-sm text-(--text-muted) hover:text-(--link) transition-colors"
+        >
+          Blog
+        </a>
         <NavLink to="/projects">Projects</NavLink>
         <a
           href="https://github.com/shamalweerasooriya"
